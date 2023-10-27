@@ -11,9 +11,9 @@ import PencilKit
 
 
 /// A SwiftUI view that represents a PencilKit drawing canvas within your application.
-struct DrawingView: UIViewControllerRepresentable {
+public struct DrawingView: UIViewControllerRepresentable {
     
-    typealias UIViewControllerType = DrawingCanvasViewController
+    public typealias UIViewControllerType = DrawingCanvasViewController
     
     @Binding var drawingData: Data
     var drawingPolicy: PKCanvasViewDrawingPolicy
@@ -31,14 +31,14 @@ struct DrawingView: UIViewControllerRepresentable {
         self.drawingChanged = drawingChanged
     }
     
-    func makeUIViewController(context: Context) -> DrawingCanvasViewController {
+    public func makeUIViewController(context: Context) -> DrawingCanvasViewController {
         let viewController = DrawingCanvasViewController(drawingPolicy: self.drawingPolicy)
         viewController.drawingData = drawingData
         viewController.drawingChanged = drawingChanged
         return viewController
     }
     
-    func updateUIViewController(_ uiViewController: DrawingCanvasViewController, context: Context) {
+    public func updateUIViewController(_ uiViewController: DrawingCanvasViewController, context: Context) {
         // Update the view controller if needed
         
     }

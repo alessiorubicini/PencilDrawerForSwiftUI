@@ -10,7 +10,7 @@ import SwiftUI
 
 import PencilKit
 
-class DrawingCanvasViewController: UIViewController {
+public class DrawingCanvasViewController: UIViewController {
     
     var drawingData = Data()
     var drawingChanged: (Data) -> Void = {_ in}
@@ -38,7 +38,7 @@ class DrawingCanvasViewController: UIViewController {
         return toolPicker
     }()
     
-    override func viewDidLoad() {
+    public  override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(canvas)
         NSLayoutConstraint.activate([
@@ -61,7 +61,7 @@ class DrawingCanvasViewController: UIViewController {
 }
 
 extension DrawingCanvasViewController: PKToolPickerObserver, PKCanvasViewDelegate {
-    func canvasViewDrawingDidChange(_ canvasView: PKCanvasView) {
+    public func canvasViewDrawingDidChange(_ canvasView: PKCanvasView) {
         self.drawingChanged(canvasView.drawing.dataRepresentation())
     }
 }
