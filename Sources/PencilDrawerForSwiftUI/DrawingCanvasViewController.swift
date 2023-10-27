@@ -26,7 +26,6 @@ class DrawingCanvasViewController: UIViewController {
     
     lazy var canvas: PKCanvasView = {
         let view = PKCanvasView()
-        //view.drawingPolicy = .anyInput
         view.minimumZoomScale = 1
         view.maximumZoomScale = 1
         view.translatesAutoresizingMaskIntoConstraints = false

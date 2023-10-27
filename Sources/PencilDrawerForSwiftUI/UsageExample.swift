@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct UsageExample: View {
+    
     @State private var drawing: Data = Data()
     
     var body: some View {
-        DrawingCanvasView(drawingData: $drawing, drawingPolicy: .anyInput, drawingChanged: { updatedData in
+        DrawingView(drawingData: $drawing, drawingPolicy: .anyInput, drawingChanged: { updatedData in
             // Handle changes in the drawing
             
         })
     }
+    
 }
 
 #Preview {
