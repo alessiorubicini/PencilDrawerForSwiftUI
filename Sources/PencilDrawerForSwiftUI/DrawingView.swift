@@ -24,7 +24,7 @@ public struct DrawingView: UIViewControllerRepresentable {
     ///   - drawingData: A binding to the drawing data, which represents the current state of the drawing canvas.
     ///   - drawingPolicy: he drawing policy that specifies the allowed input on the canvas.
     ///   - drawingChanged: A closure that is called when the drawing content changes, providing the updated drawing data.
-    init(drawingData: Binding<Data>, drawingPolicy: PKCanvasViewDrawingPolicy = .default, drawingChanged: @escaping (Data) -> Void) {
+    public init(drawingData: Binding<Data>, drawingPolicy: PKCanvasViewDrawingPolicy = .default, drawingChanged: @escaping (Data) -> Void) {
         
         self._drawingData = drawingData
         self.drawingPolicy = drawingPolicy

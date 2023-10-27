@@ -15,7 +15,7 @@ public class DrawingCanvasViewController: UIViewController {
     var drawingData = Data()
     var drawingChanged: (Data) -> Void = {_ in}
     
-    init(drawingPolicy: PKCanvasViewDrawingPolicy) {
+    public init(drawingPolicy: PKCanvasViewDrawingPolicy) {
         super.init(nibName: nil, bundle: nil)
         canvas.drawingPolicy = drawingPolicy
     }
