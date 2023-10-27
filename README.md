@@ -1,9 +1,11 @@
-# Pencil Drawer for SwiftUI
-*PencilDrawerForSwiftUI* is a Swift package that provides a SwiftUI component to let users draw in your SwiftUI app without going through the complicated PencilKit API and using the simple binding system of the SwiftUI framework.
+# Pencil Drawer for SwiftUI ✏️
+*PencilDrawerForSwiftUI* is a Swift package that provides a SwiftUI view to let users draw in your SwiftUI app without going through the complicated PencilKit APIs and using the simple binding system of the SwiftUI framework.
+
+![Pencil Drawer for SwiftUI](./Resources/PencilDrawerForSwiftUI.png)
 
 ## Usage
 
-The `PencilKit` APIs store pencil drawings as plain binary data, represented in Swift by the `Data` type. All you need to do is to define a `Data` binding variable and pass it to the `DrawingView` view as it follows:
+The `PencilKit` APIs store pencil drawings as plain binary data, represented in Swift by the `Data` type. All you need to do is to define a `Data` binded variable and pass it to the `DrawingView` view as it follows:
 
 ```swift
 struct UsageExample: View {
@@ -45,4 +47,4 @@ Copyright 2023 (©) Alessio Rubicini.
 
 The license for this repository is MIT License.
 
-Please see the LICENSE file for full reference.
+Please see the [LICENSE](LICENSE) file for full reference.
