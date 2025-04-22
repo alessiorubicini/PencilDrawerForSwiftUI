@@ -20,10 +20,6 @@
   </a>
 </div>
 
-# Preview
-
-![Pencil Drawer for SwiftUI](./Resources/PencilDrawerForSwiftUI.png)
-
 ## Usage
 
 The `PencilKit` APIs store pencil drawings as plain binary data, represented in Swift by the `Data` type. All you need to do is to define a `Data` binded variable and pass it to the `DrawingView` view as it follows:
@@ -50,6 +46,10 @@ As you can see, you can also choose the drawing policy between:
 - `default`: the default input type to use for drawing on a canvas.
 - `anyInput`: allows drawing on the canvas from any input source.
 - `pencilOnly`: pencil touches are the only input that draw on the canvas.
+
+# Preview
+
+![Pencil Drawer for SwiftUI](./Resources/PencilDrawerPreview.png)
 
 
 ## Installation
