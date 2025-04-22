@@ -1,5 +1,26 @@
-# Pencil Drawer for SwiftUI ✏️
-*PencilDrawerForSwiftUI* is a Swift package that provides a SwiftUI view to let users draw in your SwiftUI app without going through the complicated PencilKit APIs and using the simple binding system of the SwiftUI framework.
+<div align="center">
+  <img width="300" height="300" src="/Resources/icon.png" alt="Package Logo">
+  <h1><b>Pencil Drawer for SwiftUI</b></h1>
+  <p>
+    Pencil Drawer For SwiftUI is a Swift package that provides a SwiftUI view to let users draw in your SwiftUI app without going through the complicated PencilKit APIs and using the simple binding system of the SwiftUI framework.
+    <br>
+  </p>
+</div>
+
+<div align="center">
+  <a href="https://swift.org">
+<!--     <img src="https://img.shields.io/badge/Swift-5.9%20%7C%206-orange.svg" alt="Swift Version"> -->
+    <img src="https://img.shields.io/badge/Swift-5.7-orange.svg" alt="Swift Version">
+  </a>
+  <a href="https://www.apple.com/ios/">
+    <img src="https://img.shields.io/badge/iOS-15%2B-blue.svg" alt="iOS">
+  </a>
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License: MIT">
+  </a>
+</div>
+
+# Preview
 
 ![Pencil Drawer for SwiftUI](./Resources/PencilDrawerForSwiftUI.png)
 
